@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OnionArchERP.Core.Entities
+{
+   public class SYS_PostalAddress
+    {
+        public int ID { get; set; }
+        public Nullable<int> ContactTypeId { get; set; }
+        public string Address { get; set; }
+        public Nullable<int> CountryId { get; set; }
+        public Nullable<int> ProvinceId { get; set; }
+        public Nullable<int> CityId { get; set; }
+        public string Area { get; set; }
+        public string PostalCode { get; set; }
+        public Nullable<int> CompanyId { get; set; }
+        public Nullable<int> BranchId { get; set; }
+        public Nullable<int> CreatedBy { get; set; }
+        public Nullable<System.DateTimeOffset> CreatedDateTime { get; set; }
+        public Nullable<int> UpdatedBy { get; set; }
+        public Nullable<System.DateTimeOffset> UpdatedDateTime { get; set; }
+
+        public virtual SYS_Company Company { get; set; }
+        public virtual SYS_Branch Branch { get; set; }
+    }
+}

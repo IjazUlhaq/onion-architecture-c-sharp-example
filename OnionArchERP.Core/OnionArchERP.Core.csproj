@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49870C0C-9056-43D4-B9A2-176CA783E54D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnionArchERP.Core</RootNamespace>
+    <AssemblyName>OnionArchERP.Core</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\SYS_BranchContactNumber.cs" />
+    <Compile Include="Entities\SYS_BranchEmailAddress.cs" />
+    <Compile Include="Entities\SYS_CompanySubscription.cs" />
+    <Compile Include="Entities\SYS_CompanySubscriptionModule.cs" />
+    <Compile Include="Entities\SYS_CustomFields.cs" />
+    <Compile Include="Entities\SYS_CustomFieldValue.cs" />
+    <Compile Include="Entities\SYS_FieldTypes.cs" />
+    <Compile Include="Entities\SYS_Forms.cs" />
+    <Compile Include="Entities\SYS_FormType.cs" />
+    <Compile Include="Entities\SYS_Modules.cs" />
+    <Compile Include="Entities\SYS_RoleSecurityRights.cs" />
+    <Compile Include="Entities\SYS_SystemRole.cs" />
+    <Compile Include="Entities\SYS_SystemRoleUsers.cs" />
+    <Compile Include="Entities\SYS_User.cs" />
+    <Compile Include="Entities\SYS_Branch.cs" />
+    <Compile Include="Entities\SYS_Company.cs" />
+    <Compile Include="Entities\SYS_ContactNo.cs" />
+    <Compile Include="Entities\SYS_Department.cs" />
+    <Compile Include="Entities\HC_Designation.cs" />
+    <Compile Include="Entities\SYS_EmailAddress.cs" />
+    <Compile Include="Entities\HC_Employee.cs" />
+    <Compile Include="Entities\HC_Attendance.cs" />
+    <Compile Include="Entities\HC_EmployeeContactNumber.cs" />
+    <Compile Include="Entities\HC_EmployeeEmailAddress.cs" />
+    <Compile Include="Entities\HC_EmployeeJoining.cs" />
+    <Compile Include="Entities\SYS_PostalAddress.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
